@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- <base href="https://www.greenlabo.co.th/tradingview/"> -->
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <link rel="icon" href="reward-logo.png" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=0"
+    />
+
+    <meta
+      name="keywords"
+      content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects"
+    />
+    <meta name="author" content="Dreamguys - Bootstrap Admin Template" />
+    <meta name="robots" content="noindex, nofollow" />
+
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="reward-logo.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "reward-logo.png" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Teading View</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="reward-logo.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <!-- Fontawesome CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/fontawesome-free-5.13.0-web/css/all.css"
+    />
+
+    <!-- Lineawesome CSS -->
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css" />
+
+    <!-- Chart CSS -->
+    <link rel="stylesheet" href="assets/plugins/morris/morris.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <script
+      type="text/javascript"
+      src="charting_library/charting_library.min.js"
+    ></script>
+
+    <style>
+      .tree {
+        min-height: 20px;
+        padding: 19px;
+        margin-bottom: 20px;
+        background-color: #1a1a1a;
+        border: 1px solid #999;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+      }
+      .tree li {
+        list-style-type: none;
+        margin: 0;
+        padding: 10px 5px 0 5px;
+        position: relative;
+      }
+      .tree li::before,
+      .tree li::after {
+        content: "";
+        left: -20px;
+        position: absolute;
+        right: auto;
+      }
+      .tree li::before {
+        border-left: 1px solid #999;
+        bottom: 50px;
+        height: 100%;
+        top: 0;
+        width: 1px;
+      }
+      .tree li::after {
+        border-top: 1px solid #999;
+        height: 20px;
+        top: 25px;
+        width: 25px;
+      }
+      .tree li span:not(.glyphicon) {
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+        display: inline-block;
+        padding: 4px 9px;
+        text-decoration: none;
+      }
+      .tree li.parent_li > span:not(.glyphicon) {
+        cursor: pointer;
+      }
+      .tree > ul > li::before,
+      .tree > ul > li::after {
+        border: 0;
+      }
+      .tree li:last-child::before {
+        height: 30px;
+      }
+      .tree li.parent_li > span:not(.glyphicon):hover,
+      .tree
+        li.parent_li
+        > span:not(.glyphicon):hover
+        + ul
+        li
+        span:not(.glyphicon) {
+        background: "#000";
+        border: 1px solid #999;
+        padding: 3px 8px;
+        color: #000;
+      }
+
+      marquee {
+        font-size: 18px;
+        font-weight: 300;
+        color: #8ebf42;
+        font-family: sans-serif;
+      }
+
+      .rdl-control {
+        height: 500px !important;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+    <!-- Scripts -->
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="assets/js/jquery.slimscroll.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="assets/plugins/morris/morris.min.js"></script>
+    <script src="assets/plugins/raphael/raphael.min.js"></script>
+    <!-- <script src="assets/js/chart.js"></script> -->
+
+    <!-- Custom JS -->
+    <script src="assets/js/app.js"></script>
+    <script src="controller/dashboardController.js"></script>
+  </body>
+</html>
